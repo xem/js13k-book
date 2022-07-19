@@ -1,107 +1,105 @@
-﻿<div id=L></div>
+﻿<div id=L>🡐</div>
 <div id=R>🡒</div>
-<div id=book class=closed>
+<div id=book class=closed0>
 <div class=page>
 <div class=pageleft>
 
 <div id=p1 style=display:none>
 <h1>MiniSweeper</h1>
-<textarea id=t1>
+<textarea readonly id=t1>
 <table border id=t>
 <script>
-b=[v=[]];f=[l=g=0];n=[];function r(d){for(M=!l;M;l=g)for(a=M=H="";s>++a;)for(j=s,H+="<tr>";~--j;H+="<th width=25 height=30 onclick=b[i="+I+"]?g--:v[i]=1;r() oncontextmenu=for(f["+I+"]^=g=1,a=0;a<s*s;)g&=b[a]^!f[a++];return!!r() "+(v[I]|g||"bgcolor=tan")+">"+(f[I]?"⚑":b[I]&g?"💣":v[I]|g&&n[I]||"\xa0"))for(I=a*s+j,T=d?b[I]=.1>Math.random():0,x=2;~x--;)for(y=2;~y--;~B&&B<s?(n[C]=~~n[C]+T)||v[I]|b[I]|!v[C]?0:v[I]=M=1:0)B=j+y,C=(a+x)*s+B;t.innerHTML=H}r(s=9)
+b=[v=[]];f=[l=g=0];n=[];r=d=>{for(M=!l;M;l=g)for(a=M=H="";s>++a;)for(j=s,H+="<tr>";~--j;H+="<th width=25 height=30 onclick=b[i="+I+"]?g--:v[i]=1;r() oncontextmenu=for(f["+I+"]^=g=1,a=0;a<s*s;)g&=b[a]^!f[a++];return!!r() "+(v[I]|g||"bgcolor=tan")+">"+(f[I]?unescape("⚑"):b[I]&g?unescape("💣"):v[I]|g&&n[I]||"\xa0"))for(I=a*s+j,T=d?b[I]=.1>Math.random():0,x=2;~x--;)for(y=2;~y--;~B&&B<s?(n[C]=~~n[C]+T)||v[I]|b[I]|!v[C]?0:v[I]=M=1:0)B=j+y,C=(a+x)*s+B;t.innerHTML=H};r(s=9)
 </script>
 </textarea>
 </div>
   
 <div id=p2 style=display:none>
 <h1>Floppy Dragon</h1>
-<textarea id=t2>
-<canvas id=a width=530 height=530>
+<textarea readonly id=t2>
+<canvas id=a width=330 height=300>
 <script>
-c=a.getContext`2d`;for(c.scale(a.height/1e3,a.height/1e3),d=e=f=h=0,g=[],o=0;o<1e3;o++)g[o]=g[o+1e3]=8*Math.random()|0;i=j=300,k=20,l=50,ontouchstart=onmousedown=onkeydown=function(){if(e){for(d=e=f=h=0,g=[],o=0;o<1e3;o++)g[o]=g[o+1e3]=8*Math.random()|0;i=j=300,k=20,l=50}else h=45,d=1},(n=function(){for(c.fillStyle="#E50",c.fillRect(0,0,4e4,4e4),c.fillStyle="#920",c.beginPath(),c.moveTo(-k,0),o=2e3;o--;)o%20?c.lineTo(40*o-k,20+4*g[o]):(c.lineTo(40*o-k,100*g[o]),c.lineTo(40*o-k-4,100*g[o]));for(c.lineTo(40*o-k,0),c.fill(),c.beginPath(),c.moveTo(-k,2e3),o=2e3;o--;)o%20?c.lineTo(40*o-k,980-4*g[o]):(c.lineTo(40*o-k,100*(g[o]+3)),c.lineTo(40*o-k-4,100*(g[o]+3)));for(o in c.lineTo(40*o-k,1e3),c.fill(),p="fE\bFf&\v{{~_=,;=vviJ.jfVi/.OoyizyhkhEwf74)\n$fwwuvtU`"+(10<h?"iZ[*)yj:*im**y|Ktdww54#5Dyiz[Kzi[Jiijk[e@1!":"zl]LfU{lKtBUh{zzU66iigig5\n\b\b&iiyz{vfwwiyDfwiiE"),c.fillStyle="#000",c.beginPath(),c.moveTo(v=i-e,w=(j-=h)-e),p)y=8-2*(p.charCodeAt(o)>>4),z=16-2*(15&p.charCodeAt(o)),c.lineTo(v+=e?y:z,w+=e?-z:y);c.fill(),d&&(h-=6),d&&!e&&(k+=20,4e4<k&&(k-=4e4)),!d||e||(k+280)%800||(f++,20<l&&l--),(50>j||950<j||!((k+300)%800)&&(j<100*g[20*~~(k/800)+20]+50||j>100*g[20*~~(k/800)+20]+250))&&(e=40),c.fillStyle="#fff",c.font="6em Arial",d&&c.fillText(f,a.width/(a.height/1e3)/2-30,500),d||c.fillText("#FloppyDragon",a.width/(a.height/1e3)/2-330,500),e&&c.fillText("score",a.width/(a.height/1e3)/2-120,400),c.fillText(e?"restart":d?"":"start",a.width/(a.height/1e3)/2-150,600),setTimeout(n,l)})()
+c=a.getContext`2d`;for(c.scale(a.height/1e3,a.height/1e3),d=e=f=h=0,g=[],o=0;o<1e3;o++)g[o]=g[o+1e3]=8*Math.random()|0;i=j=300,k=20,l=50,onmousedown=onkeydown=_=>{if(e){for(d=e=f=h=0,g=[],o=0;o<1e3;o++)g[o]=g[o+1e3]=8*Math.random()|0;i=j=300,k=20,l=50}else h=45,d=1},(n=_=>{for(c.fillStyle="#E50",c.fillRect(0,0,4e4,4e4),c.fillStyle="#920",c.beginPath(),c.moveTo(-k,0),o=2e3;o--;)o%20?c.lineTo(40*o-k,20+4*g[o]):(c.lineTo(40*o-k,100*g[o]),c.lineTo(40*o-k-4,100*g[o]));for(c.lineTo(40*o-k,0),c.fill(),c.beginPath(),c.moveTo(-k,2e3),o=2e3;o--;)o%20?c.lineTo(40*o-k,980-4*g[o]):(c.lineTo(40*o-k,100*(g[o]+3)),c.lineTo(40*o-k-4,100*(g[o]+3)));for(o in c.lineTo(40*o-k,1e3),c.fill(),p="fE\bFf&\v{{~_=,;=vviJ.jfVi/.OoyizyhkhEwf74)\n$fwwuvtU`"+(10<h?"iZ[*)yj:*im**y|Ktdww54#5Dyiz[Kzi[Jiijk[e@1!":"zl]LfU{lKtBUh{zzU66iigig5\n\b\b&iiyz{vfwwiyDfwiiE"),c.fillStyle="#000",c.beginPath(),c.moveTo(v=i-e,w=(j-=h)-e),p)y=8-2*(p.charCodeAt(o)>>4),z=16-2*(15&p.charCodeAt(o)),c.lineTo(v+=e?y:z,w+=e?-z:y);c.fill(),d&&(h-=6),d&&!e&&(k+=20,4e4<k&&(k-=4e4)),!d||e||(k+280)%800||(f++,20<l&&l--),(50>j||950<j||!((k+300)%800)&&(j<100*g[20*~~(k/800)+20]+50||j>100*g[20*~~(k/800)+20]+250))&&(e=40),c.fillStyle="#fff",c.font="6em Arial",d&&c.fillText(f,a.width/(a.height/1e3)/2-30,500),d||c.fillText("#FloppyDragon",a.width/(a.height/1e3)/2-330,500),e&&c.fillText("score",a.width/(a.height/1e3)/2-120,400),c.fillText(e?"restart":d?"":"start",a.width/(a.height/1e3)/2-150,600),setTimeout(n,l)})()
 </script>
 </textarea>
 </div>
 
 <div id=p3 style=display:none>
 <h1>2P Games</h1>
-<textarea id=t3>
+<textarea readonly id=t3>
 <body id=b>
 <script>
-a=function(c,d,e){l=0;h="<center><font face=arial><p><button onclick=m=[];f=2;a(p=g=s=1)>Tic-Tac-Toe<button onclick=m=[];f=3;a(p=g=s=1)>Tic-Tac-Toe 3D<button onclick=m=[];f=1;a(p=g=s=1)>Find Four<button onclick=m=[];f=w=0;m[27]=m[36]=-1;m[28]=m[35]=1;a(p=g=s=1)>Reversi</button><p>";if(c){for(i="1113"[f];i--;)for(h+="</table><p><table border>",j="8633"[f];j--;)for(h+="<tr>",k="8733"[f];k--;)h+="<th width=20 onclick=q("+[l,7-j,7-k]+") id=t"+l+">"+"X\xa0O"[1+(m[l]=m[l++]||0)];h+="</table><p>";~m.indexOf(0)?(h+=g?"XnO"[p+1]+" next<p>": "XnO"[-p+1]+" won",f||(h+=(w?0<w?"O>X":"X>O":"O=X")+"<p><button onclick=a(p=-p)>pass")):h+=f?g?"draw":"XnO"[-p+1]+" won":w?0<w?"O won":"X won":"draw"}b.innerHTML=h};a();q=function(c,d,e){if(g&&!m[c]){if(1<f)for(i=3;i--;)for(j=3;j--;)if(k=9*i,l=3*j,~[m[k+j]+m[k+j+3]+m[k+j+6],m[k+l]+m[k+l+1]+m[k+l+2],m[k+4]+m[k+0]+m[k+8],m[k+4]+m[k+2]+m[k+6],m[l+10]+m[l]+m[l+20],m[l+10]+m[l+2]+m[l+18],m[i+12]+m[i]+m[i+24],m[i+12]+m[i+6]+m[i+18],m[13]+m[0]+m[26],m[13]+m[2]+m[24],m[13]+m[6]+m[20],m[13]+m[8]+m[18],m[l+i]+m[l+i+9]+m[l+i+18]].indexOf(3*(m[c]=p)))g=0;if(1==f){for(;35>c&&!m[c+7];c+=7);for(i=6;i--;)for(j=7;j--;)if(k=7*i+j,~[4>j&&m[k]+m[k+1]+m[k+2]+m[k+3],3>i&&m[k]+m[k+7]+m[k+14]+m[k+21],3>i&&4>j&&m[k]+m[k+8]+m[k+16]+m[k+24],3>i&&2<j&&m[k]+m[k+6]+m[k+12]+m[k+18]].indexOf(4*(m[c]=p)))g=0}if(!f){s=0;for(i=2;~i--;)for(j=2;~j--;)if(i|j&&(t=0,m[8*(d+i)+e+j]==-p)){k=d+i;for(l=e+j;~k&&9>k&&~l&&9>l&&(m[8*k+l]!=p||!(s=t=1))&&m[8*k+l];k+=i,l+=j);if(t)for(u=d,v=e;u!=k||v!=l;u+=i,v+=j)m[8*u+v]=p}w=0;for(i=64;i--;)w+=m[i]}s&&(p=-p);a(1)}}
+a=(c,d,e)=>{l=0;h="<center><font face=arial><p><button onclick=m=[];f=2;a(p=g=s=1)>Tic-Tac-Toe<button onclick=m=[];f=3;a(p=g=s=1)>Tic-Tac-Toe 3D<button onclick=m=[];f=1;a(p=g=s=1)>Find Four<button onclick=m=[];f=w=0;m[27]=m[36]=-1;m[28]=m[35]=1;a(p=g=s=1)>Reversi</button><p>";if(c){for(i="1113"[f];i--;)for(h+="</table><p><table border>",j="8633"[f];j--;)for(h+="<tr>",k="8733"[f];k--;)h+="<th width=20 onclick=q("+[l,7-j,7-k]+") id=t"+l+">"+"X\xa0O"[1+(m[l]=m[l++]||0)];h+="</table><p>";~m.indexOf(0)?(h+=g?"XnO"[p+1]+" next<p>": "XnO"[-p+1]+" won",f||(h+=(w?0<w?"O>X":"X>O":"O=X")+"<p><button onclick=a(p=-p)>pass")):h+=f?g?"draw":"XnO"[-p+1]+" won":w?0<w?"O won":"X won":"draw"}b.innerHTML=h};a();q=(c,d,e)=>{if(g&&!m[c]){if(1<f)for(i=3;i--;)for(j=3;j--;)if(k=9*i,l=3*j,~[m[k+j]+m[k+j+3]+m[k+j+6],m[k+l]+m[k+l+1]+m[k+l+2],m[k+4]+m[k+0]+m[k+8],m[k+4]+m[k+2]+m[k+6],m[l+10]+m[l]+m[l+20],m[l+10]+m[l+2]+m[l+18],m[i+12]+m[i]+m[i+24],m[i+12]+m[i+6]+m[i+18],m[13]+m[0]+m[26],m[13]+m[2]+m[24],m[13]+m[6]+m[20],m[13]+m[8]+m[18],m[l+i]+m[l+i+9]+m[l+i+18]].indexOf(3*(m[c]=p)))g=0;if(1==f){for(;35>c&&!m[c+7];c+=7);for(i=6;i--;)for(j=7;j--;)if(k=7*i+j,~[4>j&&m[k]+m[k+1]+m[k+2]+m[k+3],3>i&&m[k]+m[k+7]+m[k+14]+m[k+21],3>i&&4>j&&m[k]+m[k+8]+m[k+16]+m[k+24],3>i&&2<j&&m[k]+m[k+6]+m[k+12]+m[k+18]].indexOf(4*(m[c]=p)))g=0}if(!f){s=0;for(i=2;~i--;)for(j=2;~j--;)if(i|j&&(t=0,m[8*(d+i)+e+j]==-p)){k=d+i;for(l=e+j;~k&&9>k&&~l&&9>l&&(m[8*k+l]!=p||!(s=t=1))&&m[8*k+l];k+=i,l+=j);if(t)for(u=d,v=e;u!=k||v!=l;u+=i,v+=j)m[8*u+v]=p}w=0;for(i=64;i--;)w+=m[i]}s&&(p=-p);a(1)}}
 </script>
 </textarea>
 </div>
 
 <div id=p4 style=display:none>
 <h1>MiniFlappyBraille</h1>
-<textarea id=t4>
-<!doctype html>
-<meta charset=utf-8>
-<input id=I style="font:3em/1.4 arial;width:400px;">
+<textarea readonly id=t4>
+<input id=I style="font:3em/1.4 arial;width:330px;">
 <script>
-for(i=g=b=[Z=c=""];d=e=f=g;onkeyup=a=>d+=a.which-39)c+="  "+unescape("⡆⡅⡃⠇")[b[i++]=(g=7*++g%97)%4];onkeydown=()=>Z||(Z=setInterval(F,33));eval(F='e<4||e%27?i:i&&b[g++]==d?f++:i=0;I.value=i?unescape("⠈⠐⠠⢀")[d]+c.slice(e++/9):f');
+for(i=g=b=[Z=c=""];d=e=f=g;onkeyup=a=>(d+=a.which-39,d<0&&(d=0),d>3&&(d=3)))c+="  "+unescape("⡆⡅⡃⠇")[b[i++]=(g=7*++g%97)%4];onkeydown=()=>Z||(Z=setInterval(F,33));eval(F='e<4||e%27?i:i&&b[g++]==d?f++:i=0;I.value=i?unescape("⠈⠐⠠⢀")[d]+c.slice(e++/9):f');
 </script>
 </textarea>
 </div>
 
 <div id=p5 style=display:none>
 <h1>MiniSimon</h1>
-<textarea id=t5>
-<body onload="a=function(k,q){z=['00F','FF0','F00','080'];~k&&(A=new Audio((b='data:audio/wav;base64,UklGRl9vT19XQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YU')+Array(z[(3+k)%4]=333).join(b.slice(60+k*2))),A.volume=.02,A.play(s(a,250,-1)));p.style.borderColor='#'+z.join('#');if(q)k^f[j]?alert(':('):++j^g||h()};(h=function(){for(i=g=f.push(new Date%4);j=i;s(a,500*i--,f[i]))s=setTimeout})(f=[])"onkeyup=a(event.keyCode-37,1)><center><p style="background:#000;width:9em;height:9em;border-radius:50%;border:9em solid"id=p>
+<textarea readonly id=t5>
+<body onload="a=(k,q)=>{z=['00F','FF0','F00','080'];~k&&(A=new Audio((b='data:audio/wav;base64,UklGRl9vT19XQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YU')+Array(z[(3+k)%4]=333).join(b.slice(60+k*2))),A.volume=.02,A.play(s(a,250,-1)));p.style.borderColor='#'+z.join('#');if(q)k^f[j]?p.outerHTML=('<h1>Score:'+f.length):++j^g||h()};(h=_=>{for(i=g=f.push(new Date%4);j=i;s(a,500*i--,f[i]))s=setTimeout})(f=[])"onkeyup=a(event.keyCode-37,1)><center><p style="background:#000;width:5em;height:5em;border-radius:50%;border:5em solid"id=p>
 </textarea>
 </div>
 
 <div id=p6 style=display:none>
 <h1>MiniPopTiles</h1>
-<textarea id=t6>
-<table border id=t><script>g=n=c=1;for(m=h=[],i=20;i;)h+=(i--&3?"":"<tr>")+"<th id=t"+i+" width=20 onclick=g&&(this[H]^c?g=0:m[this[H]='\xa0',m.indexOf(c++)]=0)>\xa0";t[H='innerHTML']=h;setInterval(function(y){if(!g)t[H]=c-1;if(g)if(n<c+20){for(;!y;)if(!m[k=20*Math.random()|0])y=m[k]=self["t"+k][H]=n++}else g=0},500)</script>
+<textarea readonly id=t6>
+<table border id=t width=300 height=400><script>g=n=c=1;for(m=h=[],i=20;i;)h+=(i--&3?"":"<tr>")+"<th id=t"+i+" width=20 onclick=g&&(this[H]^c?g=0:m[this[H]='\xa0',m.indexOf(c++)]=0)>\xa0";t[H='innerHTML']=h;setInterval(y=>{if(!g)t[H]=c-1;if(g)if(n<c+20){for(;!y;)if(!m[k=20*Math.random()|0])y=m[k]=self["t"+k][H]=n++}else g=0},500)</script>
 </textarea>
 </div>
 
 <div id=p7 style=display:none>
 <h1>MiniGameOfLife</h1>
-<textarea id=t7>
+<textarea readonly id=t7>
 <canvas id=a><svg onload=setInterval('for(a.width^=0,e=[i=1e4];i--;a.getContext`2d`.fillRect(i%k,i/k,1,e[i]=d?d[i]+n==4||n==4:3<i%9))for(jof[n=1,97,k=98,99])n+=d[i+j]+d[i-j];d=e',d=0)>
 </textarea>
 </div>
 
 <div id=p8 style=display:none>
 <h1>Chip8 emulator</h1>
-<textarea id=t8>
+<textarea readonly id=t8>
 <input onchange="with(new FileReader)readAsArrayBuffer(files[0]),onload=s=>{play(new Uint8Array(result))}"type=file>
 <p><canvas id=C width=64 height=32 value=C8PIC.ch8 style="width:320px;height:160px"></canvas>
 <script>
-play=function(rom){var imageData,audio,oscillator,i,memory,stack,pc,sp,I,timer,sound_timer,keys,keys_pressed,xhr,opcodes,tmp,opcode,interval,prefix,NNN,NN,N,X,Y,VX,VY,value,i,j,x,y;for(console.log(rom),imageData=(C=C.getContext("2d")).createImageData(64,32),i=8192;i--;)imageData.data[i]=i%4-3?0:255;for(audio=new(AudioContext=this.AudioContext||webkitAudioContext||0),memory=[],i=80;i--;)memory[i]=eval("0x"+"F999F26227F1F8FF1F1F99F11F8F1FF8F9FF1244F9F9FF9F1FF9F99E9E9EF888FE999EF8F8FF8F88"[i]+"0");for(V=new Uint8Array(new ArrayBuffer(16)),stack=[],pc=512,sp=0,I=0,timer=0,sound_timer=0,keys=[96,103,104,105,100,101,102,97,98,99,81,87,69,82,84,89],keys_pressed=[],i=rom.length;i--;)memory[i+512]=rom[i];interval=setInterval((function(){for(timer&&timer--,sound_timer&&sound_timer--,audio&&sound_timer&&!oscillator&&((oscillator=audio.createOscillator()).start||(oscillator.noteOn=oscillator.start),oscillator.stop||(oscillator.noteOff=oscillator.stop),oscillator.connect(audio.destination),oscillator.type=3,oscillator.start(0)),audio&&!sound_timer&&oscillator&&(oscillator.stop(0),oscillator=0),opcodes=4;opcodes--;){if(opcode=memory[pc]<<8|memory[pc+1],prefix=opcode>>12,NNN=4095&opcode,NN=255&opcode,N=15&opcode,X=opcode>>8&15,VX=V[X],VY=V[opcode>>4&15],224==opcode)for(i=8192;i--;)imageData.data[i]=i%4-3?0:255;if(238==opcode&&(pc=stack.pop()),1==prefix&&(pc=NNN-2),2==prefix&&(stack.push(pc),pc=NNN-2),(3==prefix&&VX==NN||4==prefix&&VX!=NN||5==prefix&&VX==VY||9==prefix&&VX!=VY||14==prefix&&(158==NN&&keys_pressed[VX]||161==NN&&!keys_pressed[VX]))&&(pc+=2),6==prefix&&(V[X]=NN),7==prefix&&(V[X]=VX+NN),8==prefix&&(N||(V[X]=VY),1==N&&(V[X]|=VY),2==N&&(V[X]&=VY),3==N&&(V[X]^=VY),4==N&&(V[15]=+((V[X]+=VY)>255)),5==N&&(V[15]=+((V[X]-=VY)>=0)),6==N&&(V[15]=1&VX,V[X]/=2),7==N&&(V[15]=+((V[X]=VY-VX)>=0)),14==N&&(V[15]=VX>>7,V[X]*=2)),10==prefix&&(I=NNN),11==prefix&&(pc=NNN+V[0]),12==prefix&&(V[X]=Math.floor(Math.random()*NN)),13==prefix)for(V[15]=0,i=N;i--;)for(j=8;j--;)value=memory[I+i]>>7-j&1,x=VX+j,y=VY+i,value&&(x>63&&(x-=63),y>31&&(y-=31),tmp=4*(64*y+x)+3,imageData.data[tmp]?imageData.data[tmp]=0:(imageData.data[tmp]=255,V[15]=1));if(15==prefix){if(7==NN&&(V[X]=timer),10==NN&&(~(V[X]=keys_pressed.indexOf(!0))||(pc-=2)),21==NN&&(timer=VX),24==NN&&(sound_timer=VX),30==NN&&(I+=VX,V[15]=+(I>4095),I&=4095),41==NN&&(I=5*VX),51==NN)for(i=3;i--;)memory[I+i]=(""+VX)[i];if(85==NN)for(i=X;i--;)memory[I+i]=V[i];if(101==NN)for(i=X;i--;)V[i]=memory[I+i]}pc+=2}C.putImageData(imageData,0,0)}),16)},onkeydown=function(e){keys_pressed[keys.indexOf(e.keyCode)]=!0},onkeyup=function(e){keys_pressed[keys.indexOf(e.keyCode)]=!1}
+play=(rom)=>{var imageData,audio,oscillator,i,memory,stack,pc,sp,I,timer,sound_timer,keys,keys_pressed,xhr,opcodes,tmp,opcode,interval,prefix,NNN,NN,N,X,Y,VX,VY,value,i,j,x,y;for(console.log(rom),imageData=(C=C.getContext("2d")).createImageData(64,32),i=8192;i--;)imageData.data[i]=i%4-3?0:255;for(audio=new(AudioContext=this.AudioContext||webkitAudioContext||0),memory=[],i=80;i--;)memory[i]=eval("0x"+"F999F26227F1F8FF1F1F99F11F8F1FF8F9FF1244F9F9FF9F1FF9F99E9E9EF888FE999EF8F8FF8F88"[i]+"0");for(V=new Uint8Array(new ArrayBuffer(16)),stack=[],pc=512,sp=0,I=0,timer=0,sound_timer=0,keys=[96,103,104,105,100,101,102,97,98,99,81,87,69,82,84,89],keys_pressed=[],i=rom.length;i--;)memory[i+512]=rom[i];interval=setInterval((()=>{for(timer&&timer--,sound_timer&&sound_timer--,audio&&sound_timer&&!oscillator&&((oscillator=audio.createOscillator()).start||(oscillator.noteOn=oscillator.start),oscillator.stop||(oscillator.noteOff=oscillator.stop),oscillator.connect(audio.destination),oscillator.type=3,oscillator.start(0)),audio&&!sound_timer&&oscillator&&(oscillator.stop(0),oscillator=0),opcodes=4;opcodes--;){if(opcode=memory[pc]<<8|memory[pc+1],prefix=opcode>>12,NNN=4095&opcode,NN=255&opcode,N=15&opcode,X=opcode>>8&15,VX=V[X],VY=V[opcode>>4&15],224==opcode)for(i=8192;i--;)imageData.data[i]=i%4-3?0:255;if(238==opcode&&(pc=stack.pop()),1==prefix&&(pc=NNN-2),2==prefix&&(stack.push(pc),pc=NNN-2),(3==prefix&&VX==NN||4==prefix&&VX!=NN||5==prefix&&VX==VY||9==prefix&&VX!=VY||14==prefix&&(158==NN&&keys_pressed[VX]||161==NN&&!keys_pressed[VX]))&&(pc+=2),6==prefix&&(V[X]=NN),7==prefix&&(V[X]=VX+NN),8==prefix&&(N||(V[X]=VY),1==N&&(V[X]|=VY),2==N&&(V[X]&=VY),3==N&&(V[X]^=VY),4==N&&(V[15]=+((V[X]+=VY)>255)),5==N&&(V[15]=+((V[X]-=VY)>=0)),6==N&&(V[15]=1&VX,V[X]/=2),7==N&&(V[15]=+((V[X]=VY-VX)>=0)),14==N&&(V[15]=VX>>7,V[X]*=2)),10==prefix&&(I=NNN),11==prefix&&(pc=NNN+V[0]),12==prefix&&(V[X]=Math.floor(Math.random()*NN)),13==prefix)for(V[15]=0,i=N;i--;)for(j=8;j--;)value=memory[I+i]>>7-j&1,x=VX+j,y=VY+i,value&&(x>63&&(x-=63),y>31&&(y-=31),tmp=4*(64*y+x)+3,imageData.data[tmp]?imageData.data[tmp]=0:(imageData.data[tmp]=255,V[15]=1));if(15==prefix){if(7==NN&&(V[X]=timer),10==NN&&(~(V[X]=keys_pressed.indexOf(!0))||(pc-=2)),21==NN&&(timer=VX),24==NN&&(sound_timer=VX),30==NN&&(I+=VX,V[15]=+(I>4095),I&=4095),41==NN&&(I=5*VX),51==NN)for(i=3;i--;)memory[I+i]=(""+VX)[i];if(85==NN)for(i=X;i--;)memory[I+i]=V[i];if(101==NN)for(i=X;i--;)V[i]=memory[I+i]}pc+=2}C.putImageData(imageData,0,0)}),16)},onkeydown=e=>{keys_pressed[keys.indexOf(e.keyCode)]=!0},onkeyup=e=>{keys_pressed[keys.indexOf(e.keyCode)]=!1}
 </script>
 </textarea>
 </div>
 
 <div id=p9 style=display:none>
 <h1>MMXLVIII</h1>
-<textarea id=t9>
-<body onload="function M(c,d){for(i=H=16;i--;G|=p>>11)for(p=B[m=V(j=i%4+1)];--j?(q=B[n=V(j)])?p-q?0:h=c?0:B[p?S+=B[m]*=2:B[i++,m]=q,n]=d:L=top:0;)R=Math.random}function V(x){if(x)return(D>1?4-x:x-1)<<D%2*2|i-i%4>>D%2*2;for(i=H|R()*H;B[--i%H];);B[i%H]=2<<R()+.1}(onkeyup=function(e){D=e?e.which-37:B=[];D>>2||M()|V(e?h:V());for(D=h=4;D--;)M(1);for(h=S+'<table border>';H;P.innerHTML=h+='<th width=50 height=50>'+[B[H]])H--%4?0:h+='<tr>'})(S=G=0)"id=P>
+<textarea readonly id=t9>
+<body onload="M=(c,d)=>{for(i=H=16;i--;G|=p>>11)for(p=B[m=V(j=i%4+1)];--j?(q=B[n=V(j)])?p-q?0:h=c?0:B[p?S+=B[m]*=2:B[i++,m]=q,n]=d:L=top:0;)R=Math.random}V=x=>{if(x)return(D>1?4-x:x-1)<<D%2*2|i-i%4>>D%2*2;for(i=H|R()*H;B[--i%H];);B[i%H]=2<<R()+.1}(onkeyup=e=>{D=e?e.which-37:B=[];D>>2||M()|V(e?h:V());for(D=h=4;D--;)M(1);for(h=S+'<table border>';H;P.innerHTML=h+='<th width=50 height=50>'+[B[H]])H--%4?0:h+='<tr>'})(S=G=0)"id=P>
 </textarea>
 </div>
 
 <div id=p10 style=display:none>
 <h1>Ping</h1>
-<textarea id=t10>
+<textarea readonly id=t10>
 <body onload='k=13,x=W=27,X=Y=1,setInterval(`for(i=h="",k=k<0?0:24<k?24:k,X=x%W?X:-X,Y=x<0?1:297<x?1%(x-299-k)?p:-1:Y,x+=Y*(W+X*Y);i++<297+k;p.innerHTML=h+888)h+=i%W?i^x?" ":0:"|\\n"`,99)' onkeydown=k+=event.which-38><pre id=p>
 </textarea>
 </div>
 
 <div id=p11 style=display:none>
 <h1>Pacman</h1>
-<textarea id=t11>
+<textarea readonly id=t11>
 <body onload='for(l=D=11;d=k=D--;x=78)l+=unescape("῿၁᝝ᐅᗕᔕᕵ").charCodeAt(D<7?D:10-D).toString(2)+3;l=l.split(""),setInterval("if(x^X)for(h=i=l[x]=2,l[x+=d=2%k||9&l[x+(o=k%2||~-k*14)]?9&l[x+d]?0:d:o]=4,l[X]&=7,b=D%4-2,b=b++%2||b*14,9&l[X+b]?D++:X+=b,l[X]|=8;i<154;)p.innerHTML=h+=`.# \\nx`[l[++i]]||0",X=151)' onkeydown=k=event.which-38><pre id=p>
 </textarea>
 </div>
 
 <div id=p12 style=display:none>
 <h1>Tetris</h1>
-<textarea id=t12>
+<textarea readonly id=t12>
 <body id=Z onload="M=e=>P&&(h=0,b=[...B],p=P.map((v,i)=>(E=~i%2,x=eval(e[0]),E?0:b[h|=x<0|x>9|b[y]>>x&1|y>17,y]|=1<<x,y=x)),h),b=C=Array(9),(onkeydown=_=s=>(s?(k=s.which-38)%2-k||M`k?v-!E*k:P[2]-(P[i^1]-P[3])*(E|1)`&&M`v`:G||(P=P||[...'02121303040506161715'.substr(new Date%7*2,8,B=[...C,...b].filter(v=>v^1023||!(S+=s+=100)).slice(-18))],M`v-E`?k=p&=G=M`v`:0,setTimeout(_,k-2?200:20,0)),P=p,S|=b.map(v=>{S+=`
 `;for(x=10;x--;)Z.innerText=S+=unescape('□■')[G^(v^1023+P&&v>>x&1)]})))(S=P=k=G=0)"style=font:2em/.6'>
 </textarea>
@@ -109,50 +107,110 @@ play=function(rom){var imageData,audio,oscillator,i,memory,stack,pc,sp,I,timer,s
 
 <div id=p13 style=display:none>
 <h1>MiniColor</h1>
-<textarea id=t13>
+<textarea readonly id=t13>
 <p id=o><p id=p><svg onload='s=c=0;t=30;z=255;setInterval`if(!c)for(c=1,H="<table style=width:5in;height:5in>",S=z*Math.random()|0,g=~~(3+s/5),w=S%(g*g),j=g*g;0<t&&j--;o[L="innerHTML"]=H)H+="<td style=background:rgba("+[S,2*S%z,S*S%z,.25+S/z/2+(j==w)*(.2-s/z)]+") onclick="+(j==w?"s++${9}c=0":"s-=0<s")+">"+[["<tr>"][j%g]];t-=(0<t)/99;t<1&&(o[L]="END");p[L]=+s`'>
 </textarea>
 </div>
 
 <div id=p14 style=display:none>
-<h1>TITLE</h1>
-<textarea id=t14>
+<h1>MiniSnake</h1>
+<textarea readonly id=t14>
+<canvas style="border:9px solid"id=c><svg onload='X=z=>c.getContext`2d`.fillRect(10*z[0],10*z[1],10,10);S=9;h=l=1;g=v=0;s=[];a=[9,9];for(i=9;i--;)s.push([i,7]);(w=b=>{s.unshift([(s[0][0]+h+30)%30,(s[0][1]+v+15)%15]);for(i of s)i!=s[0]&&s[0][0]==i[0]&&s[0][1]==i[1]&&(g=1,c.outerHTML=(S-9));if(a[0]==s[0][0]&&a[1]==s[0][1])for(a=0,S++;!a;){a=[~~(30*Math.random()),~~(15*Math.random())];for(i of s)i[0]==a[0]&&i[1]==a[1]&&(a=0)}else s.pop();c.width|=0;for(j of s)X(j);X(a);l=1;g||setTimeout(w,160-S/3)})();self.onkeyup=b=>{k=b.keyCode;l&&(v&&(h=39==k?1:37==k?-1:0)?l=v=0:h&&(v=40==k?1:38==k?-1:0)&&(l=h=0))}'>
 </textarea>
 </div>
 
 <div id=p15 style=display:none>
-<h1>TITLE</h1>
-<textarea id=t15>
+<h1>Can I Haz 1Karrot? (todo fix camera)</h1>
+<textarea readonly id=t15>
+<body id=b>
+<script>
+q=u=d=l=r=f=0;
+setInterval(e=>{
+f||(onkeydown=e=>this[`lurdl*d*l*ur*u`[(e.which+3)%20]]=1,onkeyup=e=>this[`lurdl*d*l*ur*u`[(e.which+3)%20]]=0,b.innerHTML=unescape(`<div style=height:95vh;perspective:7in;overflow:hidden;background:#6e0><div style=transform-style:preserve-3d;margin:50vh+50% id=s><a onkeyup style=position:fixed;font:3em'';padding:2em+0+0 id=t515>🥕<a onkeyup style=position:fixed;font:3em'';padding:2em+0+0 id=t10>🐌<a onkeyup style=position:fixed;font:3em'';padding:2em+0+0 id=t010>🐒<a onkeyup style=position:fixed;font:3em'';padding:2em+0+0 id=t40>🐍<a onkeyup style=position:fixed;font:3em'';padding:2em+0+0 id=t012>🐂<a onkeyup style=position:fixed;font:3em'';padding:2em+0+0 id=t07>🐥<a onkeyup style=position:fixed;font:3em'';padding:2em+0+0 id=t59>🦍<a onkeyup style=position:fixed;font:3em'';padding:2em+0+0 id=t46>🐢<a onkeyup style=position:fixed;font:3em'';padding:2em+0+0 id=t214>🐘<a onkeyup style=position:fixed;font:3em'';padding:2em+0+0 id=t33>🐆<a onkeyup style=position:fixed;width:1.${navigator.platform[x=y=a=5]?2:4}em;font:3em'' id=t>🐰<div style=font:1.2em/.${navigator.platform[x=y=a=5]?2:9}em'';transform:scale(-1)>🎩`));for(i in m=[5120,22511,29732,13540,29829,57087])for(j=16;j--;)f||(s.innerHTML+=m[i]>>j&1?`<div style=position:fixed;padding:1.51in;background:#961;transform:translate3D(${j*3+.5}in,${i*3+.5}in,0)>`:q++&&q%7?`<div style=position:fixed;font:7em'' id=t${i+j}>`+[...unescape(`🌳🌲🌵🌴`)][q%4]:``),this[`t${i+j}`]&&(this[`t${i+j}`].style.transform=`translate3D(${j*3+1.5}in,${i*3+1}in,2in)rotateZ(${-a}rad)rotateX(5rad)rotateY(${this[`t${i+j}`].onkeyup?Math.sin(f/5)/5:0}rad)scale(2.5)`,x>46?(this[`t${i+j}`].style.transition=this[`t${i+j}`].onkeyup?a=0:s.style.transition=`5s`,s.style.transform=`rotateX(.5rad)translate3D(-24in,-24in,-24in)`):s.style.transform=`rotateX(.7rad)rotateZ(${a}rad)translate3D(${-x}in,${-y}in,0)`);v=x,w=y,x+=(d-u)/9*Math.sin(a+=(l-r)/30),y+=(d-u)/9*Math.cos(a),x>0&&y>0&&m[~~(y/3)]>>x/3&1||(x=v,y=w),t.style.transform=`translate3D(${x}in,${y}in,${3+Math.sin(f/5)}em)rotateZ(${-a}rad)rotateX(5rad)`,f++
+},33)
+</script>
 </textarea>
 </div>
 
 <div id=p16 style=display:none>
-<h1>TITLE</h1>
-<textarea id=t16>
+<h1>SN1KE</h1>
+<textarea readonly id=t16>
+<body id=b>
+<script>
+b.style.width="48ch";onkeydown=d=e=>{if(!w){z=(f=l<25)?4:l<30?+"75766"[l-25]:l<43?5:6;k=e.which%36,k==16&&d(++l,w=n=0),k<5?(q=p+[,-1,-16,1,16][k],q+=!f&&n&&m(q)>1?[,z,16*z,-z,-16*z][k]:0,n=m(q)<2,s.includes(q)||(s=[p=q,...s])):(n=0,s=[p=81,80]);s.length=l<6?8:l<12?11:l<21?13:f?15:l<30?14:l<43?15:l<48?16:l<52?20:22;w=s.every(p=>!m(p))&&setTimeout`d(++l${500}w=n=0)`;for(B=i="";i<176;i++)B+=`<a style=width:3ch;height:3ch;float:left;background:#${s.includes(i)?w?161:"da6":[111,,777][m(i)]}>${i-p?(i?"":unescape(" ")+(l+1)):unescape("👀")}`};b.innerHTML=l<55?B:unescape('<marquee><h1>🎉 YOU WON 🎉')};m=p=>(x=p%16)<(t=8-z/2|0)||x>t+z-1||(y=p>>4)<t-2||y>t+z-(f?1:3)?2:!(parseInt("19r,yn,2nn,on,sc,2yc,1aer,3ddj,34v,7pb,327,m48,1egj,ab87,4var,44cc,4v9z,5lye,cdfb,cn3c,1am6,gtjz,9tuf,4wz2,b7cj,1hrdfddq8y,g3t6b,2tc09uicht,1ibkfyb,pesw8s3,jrxo1,9jorj,j7r6m,jio5o,fv5kd,jdyrj,b2lvj,b1asx,jopxb,9luxq,d8473,jnejl,jrkbh,91tgwx,e03aae4,427yw3s,im7v7p,ofbd9ip,46nskug,p2yhnzn,ofaqrjz,1v4x23l,v7krrlr,uq3x8jj,qb2u913".split(",")[l],36)/2**(z*(y-t+2)+(x-t))&1)*(f+1);d(l=w=n=0)
+</script>
 </textarea>
 </div>
 
 <div id=p17 style=display:none>
-<h1>TITLE</h1>
-<textarea id=t17>
+<h1>MiniTicTacToe</h1>
+<textarea readonly id=t17>
+<script>for(i=12;--i;d.write(i%4?`<input type=button value=" "onclick="value-1?value='.XO'[d[${i}]=i++%2+1]:0;for(b of'1345')for(a=12;--a;)d[a]&d[+b+a]&d[2*b+a]&&d.write('.XO'[d[a]]+' wins!')"style=width:30>`:`<br>`))d=document</script>
 </textarea>
 </div>
 
 <div id=p18 style=display:none>
-<h1>TITLE</h1>
-<textarea id=t18>
+<h1>SMB1-1k</h1>
+<textarea readonly id=t18>
+<canvas id=a>
+<script>
+c = a.getContext(`2d`);
+a.width=15*9;
+a.height=13*9;
+f=[l=u=r=e=o=t=0],d=n=2,y=R=24,S=(l,i)=>{for(Y=11;Y-->l;)f[Y][i]=f[Y][i+1]=4},a=(l,i,e)=>{for(Y=11;Y-->l;)if(e)for(X=i;X<i+Y-l;X++)f[Y][X]=f[10][198]=1;else for(X=i;X-->i-Y+l;)f[Y][X]=f[10][198]=1},g=(l,i,e)=>{if(f[~~i])return e&&f[~~i][~~l]&&2!=f[~~i][~~l]&&(f[~~i][~~l]--,o=0),f[~~i][~~l]};for(i=15;i--;)for(f[i]=[],j=999;j--;)f[i][j]=i>10&&![69,70,86,87,88,153,154].includes(j);for(i of[22,94,109,129,130])f[3][i]=3;for(i of[80,81,82,83,84,85,86,87,91,92,93,121,122,123,128,131])f[3][i]=1;for(i of[8,21,23,78,106,109,112,170])f[7][i]=3;for(i of[20,22,24,77,79,94,100,118,129,130,88,89,171])f[7][i]=f[10][198]=1;S(9,28),S(8,38),S(7,46),S(7,57),S(9,83),S(9,179),a(6,138),a(6,152),a(6,153),a(2,190),a(2,191),a(6,140,1),a(6,155,1),onkeydown=onkeyup=(l=>self[`lur`[l.which-37]]=l.type[5]),setInterval("for(R-=.02,Math.hypot(R-d,10-n)<1&&(z?(R=-1,o=-.2):t=1),l&&d>e&&g(d-=.1,n)&&(d=1+~~d),r&&(g((d+=.1)+1,n)?d=~~d-.1:d>e+7&&(e+=.1)),u&&!z&&(o=-.25),n+=o+=.012,o<0&&g(d,n+=o,1)|g(d+.9,n,1)&&(n=1+~~n,o=0),(n>14||d>198)&&(t=1),z=u=!(g(d,n+1)|g(d+.5,n+1)),z||(n=~~n,o=0),c.fillStyle=`#59f`,c.fillRect(0,0,999,999),i=13;i--;)for(j=999;j--;)4==f[i][j]?(c.fillStyle=`#8d1`,c.fillRect(9*j-9*e,9*i,9,9),c.fillRect(1784-9*e,9,2,81)):3==f[i][j]?(c.fillStyle=`#f93`,c.fillRect(9*j-9*e,9*i,9,9)):f[i][j]&&(c.fillStyle=`#c40`,c.fillRect(9*j-9*e,9*i,9,9));c.fillStyle=`#a00`,c.fillRect(9*R-9*e,90,9,9),c.fillStyle=`#d20`,c.fillRect(9*d-9*e,9*n,9,9),t&&(location=location),y&&(c.fillStyle=`#000`,c.fillRect(0,0,999,999),y--)",9)
+</script>
 </textarea>
 </div>
 
 <div id=p19 style=display:none>
-<h1>TITLE</h1>
-<textarea id=t19>
+<h1>SHIFT 2K20</h1>
+<textarea readonly id=t19>
+<center><canvas width=704 height=704 style='border:9px solid;width:300px;height:300px;'id=A><script>_=s=u=d=l=r=0;var f,o,n,K=[{m:`0000000000000000000000000000000000000000000000000000000000000000301111111111111111111111111111111111111111111111111111111`,s:[1,5],t:[`MOVE WITH ARROW KEYS`,20,20,`#000`]},{m:`0000000000000000000000000000000000000000000000000000000000000000301110111011111101110111111011101111110111011111121112111`,s:[1,5]},{m:`0000000000000000000000000000000000011100000000000010000000000001000000000000111001001111110010311111100100111111221221111`,s:[1,6],K:[{k:[3,2],f:[[8,9],[9,9]],n:[[6,9],[7,9]]}],t:[`GRAB THE COIN`,25,5,`#000`]},{m:`0000000000000000000000000000000000000003000000000011011110000000111111000001111111100011111111111111111111111111111111111`,s:[1,4],t:[`SHIFT YOUR PERSPECTIVE!`,20,5,`#fff`]},{m:`0002000000000010000000401100000011011001100100010011001000100000010001000000100010000001000112200011001111111111111111111`,s:[1,7],K:[{k:[7,4],f:[[3,7],[2,7]],n:[[4,7],[5,7]]}]},{m:`1000000000010011111110101000000101010011001010101011010101011010101010000101010011111010100000000100111111111030000000000`,s:[3,6],t:[`RESET WITH SPACE`,20,4,`#000`],K:[{k:[5,4],f:[[7,3],[8,3]],n:[[6,3],[7,3]]},{k:[1,5],f:[[10,1]],n:[]}]},{m:`0000000000000001111111000000001011100000010111002210011110111100111101111000111000110001100001100111000111011113221111111`,s:[1,2],K:[{k:[9,2],f:[[1,9],[2,9]],n:[[3,9],[4,9]]}]},{m:`0000010100001000101000010001010000101111000001011110110110111101100101111011001011100110000001111100001111000001111130022`,s:[0,4],K:[{k:[0,1],f:[[5,3],[5,4]],n:[[5,1],[5,2]]},{k:[6,3],f:[[6,4],[7,4]],n:[[4,4],[5,4]]},{k:[7,5],f:[[1,8],[1,9]],n:[[1,6],[1,7]]},{k:[0,9],f:[],n:[[10,10],[9,10]]}]},{m:`0002200000000111100111401111011000000010111100000100000101101100001001000000110011100011110001000111100011001112222112111`,s:[0,4],K:[{k:[9,7],f:[[4,9],[5,9]],n:[[2,9],[3,9]]},{k:[3,8],f:[[9,5],[10,5]],n:[[7,5],[8,5]]},{k:[10,2],f:[[3,1],[3,2]],n:[[3,3],[3,4]]}]},{m:`0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000322222222211`,s:[5,3],t:[`THE END >`,50,60]}],S=.6,g=.8,T=1,E=A.getContext`2d`,v=(i,l)=>(X=~~i,Y=~~l,+R[11*Y+X]),P=(l,t,f)=>{if(1==v(l,t)||4==v(l,t))return 1;if(!f&&K[e].K)for(i of K[e].K)for(j of i[i.t?`n`:`f`])if(k){if(~~l==10-j[0]&&~~t==10-j[1])return 1}else if(~~l==j[0]&&~~t==j[1])return 1},h=l=>{if(x=K[l].s[0]+.3,y=K[l].s[1],p=0,m=0,c=0,k=0,T=1,M=K[l].m,R=M.split``,A.style.transform=``,K[l].K)for(i of K[l].K)i.t=0};h(e=0),setInterval(()=>{if(A.width^=0,E.save(),f&&f<9&&(A.style.transform=`rotate(${(10-f)/20}turn)`,1==f&&(A.style.transform=``,x=10-x+.3,y=10-y,k=1-k,T=1,M=K[e].m,R=k?M.split``.reverse().join``.replace(/0/g,9).replace(/1/g,0).replace(/9/g,1).replace(/3/g,9).replace(/4/g,3).replace(/9/g,4).split``:M.split``)),o>10||!o){for(i=0;i<11;i++)for(j=0;j<11;j++)a=R[11*j+i],!k&&1==a||k&&0==a?E.fillRect(64*i,64*j,64,64):2==a?(E.moveTo(64*i,64*j+(k?0:64)),E.lineTo(64*i+16,64*j+(k?64:0)),E.lineTo(64*i+32,64*j+(k?0:64)),E.lineTo(64*i+48,64*j+(k?64:0)),E.lineTo(64*i+64,64*j+(k?0:64)),E.fill()):!k&&3==a||k&&4==a?(E.fillStyle=`#888`,E.fillRect(64*i+10,64*j+(k?0:10),44,54),E.fillStyle=`#000`,E.fillRect(64*i+42,64*j+(k?27:37),7,4)):(!k&&4==a||k&&3==a)&&(E.fillRect(64*i,64*j,64,64),E.fillStyle=`#888`,E.fillRect(64*i+10,64*j+(k?10:0),44,54),E.fillStyle=`#000`,E.fillRect(64*i+42,64*j+27,7,4));if(K[e].K)for(i of(E.fillStyle=`#aaa`,K[e].K))for(j of(i.t||(E.beginPath(),k?E.arc(64*(10-i.k[0])+32,64*(10-i.k[1])+32,9,0,7):E.arc(64*i.k[0]+32,64*i.k[1]+32,9,0,7),E.fill(),E.closePath()),i[i.t?`n`:`f`]))k?(E.fillRect(64*(10-j[0]),64*(10-j[1]),64,64),R[10-j[0]+11*(10-j[1])]=9):(E.fillRect(64*j[0],64*j[1],64,64),R[j[0]+11*j[1]]=9);K[e].t&&(E.font=`30px calibri`,E.fillStyle=K[e].t[3],E.save(),`f`==K[e].t[3][1]^k&&(E.translate(350,350),E.rotate(3.14),E.translate(-350,-350)),E.fillText(K[e].t[0],10*K[e].t[1],10*K[e].t[2]),E.restore())}if(s)!f&&P(x,y+g,1)&&P(x+S-.1,y+g,1)&&(f=20);else if(o)1==--o&&h(++e);else if(n)1==--n&&h(e);else if(p=r&&!f?.17:l&&!f?-.17:0,u&&c&&t&&(t=1-t,m=-.32),1-c&&(m+=.045)>1&&(m=1),y+=m,x+=p,y+g>11&&(y=10.2,m=0),y<0&&(y=0,m=0),x<0&&(x=0),x+S>11&&(x=10.4),(P(x+(.17+.01),y)||P(x+S-(.17+.01),y))&&(m=0,y=1+~~y),m>=0&&(P(x+(.17+.01),y+g)||P(x+S-(.17+.01),y+g))&&(m=0,y=~~(y+g)-g),(P(x,y+(.17+.01))||P(x,y+g-(.17+.01)))&&(x=1+~~x),(P(x+S,y+(.17+.01))||P(x+S,y+g-(.17+.01)))&&(x=~~(x+S)-S),2!=v(x+.3,y+.3)&&2!=v(x+.3,y+g-.3)&&2!=v(x+S-.3,y+.3)&&2!=v(x+S-.3,y+g-.3)||(n=20),(c=10.2==y||P(x+(.17+.01),y+g)||P(x+S-(.17+.01),y+g)?1:0)&&3==v(x,y)&&3==v(x+S,y)&&(o=30),K[e].K&&!f)for(i of K[e].K)k?!i.t&&~~x>=10-i.k[0]&&~~x<10-i.k[0]+1&&~~y>=10-i.k[1]&&~~y<10-i.k[1]+1&&(i.t=1,R=M.split``.reverse().join``.replace(/0/g,9).replace(/1/g,0).replace(/9/g,1).replace(/3/g,9).replace(/4/g,3).replace(/9/g,4).split``):!i.t&&~~x>=i.k[0]&&~~x<i.k[0]+1&&~~y>=i.k[1]&&~~y<i.k[1]+1&&(i.t=1,R=M.split``);E.fillStyle=o?`#2B3`:n?`#b11`:`#468`,E.save(),E.translate(64*x+19.2,64*y+51.2),E.scale(1,T),E.fillRect(-19.2,0,38.4,-51.2),E.restore(),f&&--f>9&&(T=-(15-f)/5),(o&&o<9||n&&n<9)&&(E.fillStyle=`#000`,E.fillRect(0,0,800,800))},33),onkeydown=onkeyup=(i=>{self[`lurdl*d*l*ur*u*_***s`[(i.which+3)%20]]=i.type[3]<`u`,u||(t=1),_&&h(e)})</script>
 </textarea>
 </div>
 
-<div id=p20 style=display:none>
-<h1>TITLE</h1>
+<div id=p20 readonly style=display:none>
+<h1>MiniWordle</h1>
 <textarea id=t20>
+<input id=i><pre id=p><script>
+W="ApplyAwfulAboveAppleAwardAngryAlbumAvoidAheadAllowAliveAwareAfterAdoptAdmitAdaptAmongApartAbuseActorAboutAlongAgainAsideArgueAgentAgreeAngleAngerAriseAssetAloneAlterBlockBunchBenchBeachBreakBadlyBrownBrushBuyerBriefBelowBirthBlameBasicBibleBringBroadBeginBuildBeingBladeBreadBrandBoardBlindBloodBrainBasisCrazyCheckCheekClockChiefCrackCoachCouchCheapCycleCatchChildCrowdClimbChainCoverCrashCraftCivilChartChaseChairChestCarryClaimCreamCrimeCableCabinCloudCouldCauseCrossClearCountColorCoastCloseClassCleanCourtDozenDepthDrinkDraftDailyDirtyDelayDeathDriveDoubtDramaDreamDanceDressEnjoyEqualExactExtraExistEmptyEveryEnemyEightEntryEarthEarlyEssayEventElectEagerErrorEliteEnterFiftyFightFaithFullyFreshForthFleshFunnyFewerFavorFrameForceFocusFenceFiberFlameFieldFoundFinalFirstFloorFaultFrontFruitFalseFloatGhostGivenGloveGraveGroupGuardGuideGrandGradeGrantGuestGuessGiantGlassGreenGreatGrainGrassHappyHeavyHoneyHabitHumanHumorHelloHorseHotelHouseHeartHonorIndexImplyImageIdealInnerIssueJudgeJuiceJointKnockKnifeLuckyLunchLightLaughLeaveLayerLoverLowerLevelLocalLimitLemonLaborLabelLegalLargeLeastLearnLooseLaterMajorMatchMaybeMakerMightMonthMouthMovieMayorMarryMoneyMusicModelMediaMetalMouseMountMotorMoralMeterMinorNewlyNakedNightNerveNeverNorthNovelNoiseNurseOfferOccurOughtOftenOtherOwnerOceanOrderOnionPorchPitchPatchProvePowerPhotoPhonePhaseProofPartyPeacePricePrimePlacePaperPiecePrideProudPoundPrintPriorPressPointPlatePlantPlanePilotPianoPausePanelPaintQuickQuietQuiteQuoteRelaxReplyReachRoughReadyRightRapidRiverReferReactRoundRadioRangeRatioRaiseRouteRuralShockSeizeShakeStickStockStuffShelfStaffSpeakSmokeShiftSharpShapeSweepShadeSightShrugSpaceScopeSkillStakeStudySwingSweetStorySpendSolveSorrySouthSwearSpeedStyleSlaveShortSheetShareShineShirtShootShallShoreSevenShellServeShoutSauceSplitScaleSuperSceneScoreStripStormSportSmellSleepSmartSmallSliceSmileSinceStandSugarSoundSlideStageSolidSaladSalesSenseSolarStairStareStateStealSteelStillStoneStoreStartThickThinkThankTrackThrowTrickTruckThemeTouchTeachTwiceToughTightTodayThirdThingTopicTowerTrulyTruthTheirToothThereThreeTheseThoseTermsTroopTribeTableTraceTiredTrendTradeTasteTrustTotalTitleTrainTrialTrailTreatUpperUncleUrbanUnderUnionUntilUsualVoiceVideoValueVirusVisitVitalVoterWhichWatchWeighWorksWhoseWorthWholeWhiteWhileWhereWheelWorryWomanWouldWoundWorldWrongWaterWriteWasteYouthYieldYoungYours".split(/(?=[A-Z])/).map(a=>a.toLowerCase());
+w=W[new Date%W.length],g=6,onkeyup=e=>{e.which==13&&(v=i.value.toLowerCase(),a=[...w],p.innerHTML+=`
+`+[...v].map((e,n)=>e==a[n]?a[n]=0:e).map(e=>e?a[x=a.indexOf(e)
+]=~x?unescape("🟨"):unescape("⬛"):unescape("🟩")).join``+" "+v,i.value=v!=w&&--g?"":w)}
+</script>
+</textarea>
+</div>
+
+<div id=p21 style=display:none>
+<h1>flASCII bird</h1>
+<textarea readonly id=t21>
+<body onkeyup=m=1 onload='d=o=[],e=4,m=1,setInterval(_=>{for(t=Array(153),s=~~(d/10-.99),d++,d%10?0:o[d+20]=~~(new Date%5)+1,i=-1;k=o[i+d],17>i;i++)if(k--)for(j=-1;c=j==k||4==j-k?"-":j-k>0&&4>j-k?0:"|",9>j;j++)i>-1?t[17*j+i]=c:0,16>i?t[17*j+i+1]=c:0;for(m-=.2,e-=m,(0>e||e>10||t[17*~~e+8])&&(e=4,m=1,d=0,o=[]),t[17*~~e+8]=">",r=s,i=0;z=t[i]||" ",153>i;i++)r+=i%17?z:"\n"+z;P.innerHTML=r},150)'><pre id=P>
+</textarea>
+</div>
+
+<div id=p22 style=display:none>
+<h1>run</h1>
+<textarea readonly id=t22>
+<pre id=p><script>k=98;for(h=[a=b=c=d=e=f=g=i=0];49>i;++i)h[i+49]=h[i]=~~(3*Math.random());onkeyup=t=>{t=t.keyCode;a||(a=90==t||38==t?1:83==t||40==t?2:a)};(n=()=>{b=1==a?0==f||9==f?2:3:2==a?0:1;a&&10==++f&&(f=a=0);p.innerHTML="";for(i=0;6>i;++i){m="";for(j=0;98>j;++j)m+=" _"[+(4==i)].repeat(20)+(["|^^^^^|",o="  | |  ",o,o,"   V   ","_______",,,,,"   \u039b   ","__| |__"][6*h[j]+i-5]||"       ");l=["o_<",,,," o ","/|.",",\\_",,,q=" o/",r="/|_",s="/  ",,,q,r,s][6*b+i-4];w=m.substr(g,98);p.innerHTML+=(l?w.substr(0,3)+l+w.substr(6):w)+"\n"+(5==i?e:"")}g=++g%1350;7==d&&(d=0,e++,49<k&&k--);15<g%27&&23>g%27&&(c=[1!=a&&0<d,2!=a&&1<d&&5>d,1!=a&&1<d&&5>d][h[~~(g/27)]],d++);c?alert("Perdu !"):setTimeout(n,k)})()</script>
+</textarea>
+</div>
+
+<div id=p23 style=display:none>
+<h1>NES emulator</h1>
+<textarea readonly id=t23>
+<canvas id=frameCanvas width=256 height=240></canvas>
+<button><label for=fileInput>Browse...</label></button>
+<script>
+A=X=Y=S=0,PC=32768,P=36,s=m=a=p=c=0,r=a=>(c++,memory_read(a)),w=(a,r)=>(c++,memory_write(a,r)),F=a=>(Z=(a&=255)<1,N=a>>7,a),f=a=>(C=1&a,Z=a>>1&1,I=a>>2&1,D=a>>3&1,B=a>>4&1,V=a>>6&1,N=a>>7),f(P=36),h=a=>(w(256+S--,a),S&=255),g=a=>r(256+(S=255&S+1)),O=[...Array(255)].map(((a,r)=>Function("c--,PC++;a=a+p-256*(p>>7),PC++;a=r(p+X&255)+256*r(p+X+1&255),PC++,c++;a=r(p)+256*r(p+1&255)+Y,c+=a-Y>>8<a>>8||o>>4==9,PC++;a=r(a)+X&255,PC++;a=r(a)+Y&255,PC++;a=p,PC++;a=p+256*r(PC+=2);t=p+256*r(PC+=2),c+=t>>8<t+Y>>8||o>>4==9,a=t+Y;t=p+256*r(PC+=2),c+=t>>8<t+X>>8||o>>4==9||(15&o)>13,a=t+X".split(";")["020666Z0Z77713Z444Z8Z999720666Z0Z77713Z444Z8Z999Z20666Z0Z77713Z444Z8Z999Z20666Z0Z77713Z444Z8Z999020666Z0Z77713Z445Z8Z998020666Z0Z77713Z445Z8Z998020666Z0Z77713Z444Z8Z999020666Z0Z77713Z444Z8Z999"[r-(r>>2)]]+";"+"S=X;p=r(a),C=X-p>=0,F(X-p);p=r(a),C=Y-p>=0,F(Y-p);p=r(a),C=p>>7,w(a,F(2*p)),c++;C=A>>7,A=F(2*A+(1&P));p=r(a),C=p>>7,w(a,F(2*p+(1&P))),c++;C=1&A,A=F(A>>1);p=r(a),C=1&p,w(a,F(p>>1)),c++;X=F(X-1);p=r(a),F(p&A),N=p>>7&1,V=p>>6&1;C=1&A,A=F((A>>1)+128*(1&P));w(a,F(r(a)+1)),c++;X=F(X+1);Y=F(Y-1);Y=F(Y+1);Y=F(r(a));p=r(a),C=1&p,w(a,F((p>>1)+128*(1&P))),c++;C=0;I=1;D=0;I=0;A=F(r(a));A=F(r(a)&A);p=r(a),C=A-p>=0,F(A-p);p=r(a),t=A+C-1-p,V=!!(128&(A^p))&&!!(128&(A^t)),C=t>=0,A=F(t);p=r(a),t=A+C+p,V=!(128&(A^p))&&!!(128&(A^t)),C=t>255,A=F(t);C&&(c+=1+(a>>8!=PC+1>>8),PC=a);N&&(c+=1+(a>>8!=PC+1>>8),PC=a);Z&&(c+=1+(a>>8!=PC+1>>8),PC=a);N||(c+=1+(a>>8!=PC+1>>8),PC=a);V&&(c+=1+(a>>8!=PC+1>>8),PC=a);Z||(c+=1+(a>>8!=PC+1>>8),PC=a);V||(c+=1+(a>>8!=PC+1>>8),PC=a);X=F(r(a));A=F(r(a)^A);w(a,F((r(a)-1)&255)),c++;C=A>>7,A=F(2*A);h(PC>>8),h(255&PC),PC=a-1,c++;C=1;D=1;V=0;A=F(r(a)|A);h(A);h(P|16);A=F(g()),c++;f(g()&239),c++;f(g()),PC=g()+256*g()-1,c++;C||(c+=1+(a>>8!=PC+1>>8),PC=a);op(3,1);Y=F(A);w(a,A);w(a,X);X=F(S);X=F(A);w(a,Y);A=F(Y);A=F(X);PC=g()+256*g(c+=2);PC=a-1;PC=r(a)+256*r(a+1-256*((a&255)==255))-1".split(";")["PI#PI#KIDPI#=I#PI#1IDPI#E6%)6%M6$)6%;6%E6%F6%E6%NB'NB'JB&ZB'@B'NB'4B'NB'Y90Y90L9*[90>90Y90290Y90VRSVRS-zXVRSORSVRSWR VRS/5A/5AQ5U/5A:5A/5AH5T/5A\"7C\"7C.7(\"7C?7C\"7C37C\"7C!8+!8+,8z!8+<8+!8+G8+!8+"[r-(r>>2)].charCodeAt()-32]))),op=(e,t)=>(c=0,m=r(PC),p=r(a=PC+1),e?(e>1||r(8192)>>7)&&(e<3||!I)&&(e-2?(h(PC>>8),h(255&PC),h(t?16|P:239&P)):S=S-3&255,I=1,PC=r(65528+2*e)+256*r(65528+2*e+1)):(m&&O[m](),PC++,PC&=65535),P=C+2*Z+4*I+8*D+16*B+32+64*V+128*N);var e=function(){this.state=new Array(8);for(var a=0;a<this.state.length;a++)this.state[a]=64};joy1StrobeState=0,joy2StrobeState=0,e.BUTTON_A=0,e.BUTTON_B=1,e.BUTTON_SELECT=2,e.BUTTON_START=3,e.BUTTON_UP=4,e.BUTTON_DOWN=5,e.BUTTON_LEFT=6,e.BUTTON_RIGHT=7,e.prototype={keydown:function(a){this.state[a]=65},keyup:function(a){this.state[a]=64}},joy1Read=function(){var a;switch(joy1StrobeState){case 0:case 1:case 2:case 3:case 4:case 5:case 6:case 7:a=fa.controllers[1].state[joy1StrobeState];break;case 8:case 9:case 10:case 11:case 12:case 13:case 14:case 15:case 16:case 17:case 18:default:a=0;break;case 19:a=1}return joy1StrobeState++,24===joy1StrobeState&&(joy1StrobeState=0),a},joy2Read=function(){var a;switch(joy2StrobeState){case 0:case 1:case 2:case 3:case 4:case 5:case 6:case 7:a=fa.controllers[2].state[joy2StrobeState];break;case 8:case 9:case 10:case 11:case 12:case 13:case 14:case 15:case 16:case 17:case 18:default:a=0;break;case 19:a=1}return joy2StrobeState++,24===joy2StrobeState&&(joy2StrobeState=0),a};var t,o,n=()=>{Ba(),Ba(),Ba()};fa.load=()=>{fa.mapper?2==fa.mapper?(fa.prg_0_bank=0,fa.prg_1_bank=fa.prg.length-1,fa.chr_bank=0):30==fa.mapper?(fa.chr=[[],[],[],[]],fa.prg_0_bank=0,fa.prg_1_bank=fa.prg.length-1,fa.chr_bank=0,fa.mirroring_backup=fa.mirroring):alert("unknown mapper: "+fa.mapper):(fa.prg_0_bank=0,fa.prg_1_bank=fa.prg.length-1,fa.chr_bank=0)},mapper_write=(a,r)=>{30==fa.mapper&&a>=49152&&(fa.prg_0_bank=69905&r,fa.chr_bank=r>>5&3,fa.mirroring=r>>7?3:fa.mirroring_backup),2==fa.mapper&&a>=32768&&(fa.prg_0_bank=4369&r)},memory_read=a=>{if((a&=65535)<8192)a&=2047;else if(a<16384){if(8194==(a&=8199))return Ca();if(8196==a)return ia();if(8199==a)return _a()}else if(a<16416){if(16405==a)return APU.readReg(a);if(16406==a)return joy1Read();if(16407==a)return joy2Read()}else{if(a>=32768&&a<49152)return fa.prg[fa.prg_0_bank][a-32768];if(a>=49152)return fa.prg[fa.prg_1_bank][a-49152]}return t[a]||0},memory_write=(a,r)=>{(a&=65535)<8192?a&=2047:a<16384?8192==(a&=8199)?sa(r):8193==a?ma(r):8195==a?la(r):8196==a?ua(r):8197==a?Pa(r):8198==a?Aa(r):8199==a&&ga(r):a<16404?APU.writeReg(a,r):a<16416?16404==a?ya(r):16405==a?APU.writeReg(a,r):16406==a?(0==(1&r)&&1==(1&joypadLastWrite)&&(joy1StrobeState=0,joy2StrobeState=0),joypadLastWrite=r):16407==a&&APU.writeReg(a,r):a>=24576&&a<32768&&fa.onBatteryRamWrite(a,r),a<32768&&(t[a]=r),mapper_write(a,r)};var s,m,l,u,_,y,b,T,k,v,d,U,R,j,E,H,L,W,G,z,M,J,K,Q,$,q,aa,ra,ea,ta,fa={loop:null,fps:60,frameTime:1e3/60,cpu_cycles:0,mapper:0,mirroring:0,prg:[],chr:[],frameCtx:null,vramCtx:null,frameData:null,vramData:null,frameBuffer:null,vramBuffer:null,frameBuffer8:null,vramBuffer8:null,frameBuffer32:null,vramBuffer32:null,leftSamples:[],rightSamples:[],currentSample:0,sampleRate:44100,cyclesToHalt:0,controllers:null,prg_0_bank:0,prg_1_bank:1,chr_bank:0,mirroring_backup:0,init:({rom:a,save:r,frame:t,vram:f,audio:c})=>{fa.reset(),fa.parse(a),fa.load(),fa.frameCtx=t.getContext("2d"),fa.frameData=fa.frameCtx.getImageData(0,0,256,240),fa.frameBuffer=new ArrayBuffer(245760),fa.vramBuffer=new ArrayBuffer(983040),fa.frameBuffer8=new Uint8Array(fa.frameBuffer),fa.frameBuffer32=new Uint32Array(fa.frameBuffer),f&&(fa.vramCtx=f.getContext("2d"),fa.vramData=fa.vramCtx.getImageData(0,0,512,480),fa.vramBuffer32=new Uint32Array(fa.vramBuffer),fa.vramBuffer8=new Uint8Array(fa.vramBuffer)),fa.controllers={1:new e,2:new e},onkeydown=onkeyup=a=>{fa[a.type](1,{37:e.BUTTON_LEFT,38:e.BUTTON_UP,39:e.BUTTON_RIGHT,40:e.BUTTON_DOWN,88:e.BUTTON_A,67:e.BUTTON_B,27:e.BUTTON_SELECT,13:e.BUTTON_START}[a.keyCode])}},play:()=>{fa.loop=setInterval(fa.frame,fa.frameTime)},pause:()=>{clearInterval(fa.loop)},reset:()=>{fa.pause(),t=[],pa(),APU.reset(),o=2,fa.cyclesToHalt=0},frame:()=>{var a;for(vramCanvas.width^=0,totalCycles=0,ta=0;!ta;)for(0===fa.cyclesToHalt?(o?(op(o),o=0):op(),a=c):fa.cyclesToHalt-=Math.min(fa.cyclesToHalt,8),i=a;i--;)n()},keydown:(a,r)=>{fa.controllers[a].keydown(r)},keyup:(a,r)=>{fa.controllers[a].keyup(r)},haltCycles:a=>{fa.cyclesToHalt+=a}},ca="777812a0090470810a00a007024040050130531000000000bbbe70e32f08b0b50e02d04c0780900a0390880111000000ffffb3f95f8af7fb7f67f39f3bf1d84d49f5de0333000000ffffeafdcfcdfcfdcfbbfadfaefafebfacfbff9888000000".match(/.../g).map((a=>+("0xff"+a[0]+a[0]+a[1]+a[1]+a[2]+a[2]))),pa=()=>{_=[],y=[],l=u=T=k=v=d=U=R=j=E=H=W=G=z=M=0,sa(0),ma(0)},oa=a=>((a&=16383)>16127?16144==(a&=16159)&&(a=16128):a>12287?a-=4096:a>8191&&(fa.mirroring<3?a&=14335+1024*fa.mirroring:3==fa.mirroring&&(a&=9215)),a),na=a=>a<8192?fa.chr[fa.chr_bank][a]:(16128==(65523&a)&&(a=16128),_[oa(a)]||0),sa=a=>{a>>7&1,J=a>>5&1,K=a>>4&1,Q=a>>3&1,$=a>>2&1,d=3&a},ma=a=>{q=a>>4&1,aa=a>>3&1},Ca=()=>(s=t[8194]=(W<<5)+(G<<6)+(z<<7),M=0,z=0,s),la=a=>{ra=a},ia=()=>y[ra],ua=a=>{y[ra]=a,ra++,ra%=256},Pa=a=>{M?(U=a>>3,v=7&a):(R=a>>3,j=7&a),M^=1},Aa=a=>{M?(ea+=a,v,U+=a>>5,k=R=31&a,T=d):(ea=a<<8,v=a>>4&3,d=a>>2&3,U=(3&a)<<3),M^=1},ga=a=>{ea<8192&&(fa.chr[fa.chr_bank][ea]=a),_[oa(ea)]=a,ea+=$?32:1},_a=()=>(ea<=16128?(s=L,L=na(ea)):s=na(ea),ea+=1===$?32:1,s),ya=a=>{for(var r=ra;r<256;r++)y[r]=t[256*a+r];for(r=0;r<513;r++)n();fa.haltCycles(513)},ba=a=>{var r,e,t,f,c;for(b=[],e=~~(a/8),r=64;r--;)for(f=na((t=8192+2048*(e>29)+1024*(r>31))+960+8*(e%30>>2)+(r%32>>2))>>4*(e%30>>1&1)+2*(r%32>>1&1)&3,a%=8,x=8;x--;)s=4096*K+16*na(t+e%30*32+r%32)+a,(c=2*(na(s+8)>>7-x&1)+(na(s)>>7-x&1))&&(b[8*r+x]=ca[na(16128+4*f+c)]),fa.vramBuffer32[512*(8*e+a)+(8*r+x)]=ca[na(16128+4*f+c)]},Ba=()=>{++u>340&&(u=0,l++,k=R,T=(2&T)+(1&d),l<240?(ba(((l+H)%480+240)%480),ba((l+H)%480),(a=>{var r,e,t,f,c,p;for(t=[],r=0;r<64;r++)if(a>=y[4*r]&&a<y[4*r]+(J?16:8)){if(8==t.length){W=1;break}t.push(r)}for(e=0;e<256;e++)for(aa&&(fa.frameBuffer32[256*a+e]=b[(e+E)%512]||ca[na(oa(16128))]),r=t.length-1;r>=0;r--)e>=y[4*t[r]+3]&&e<y[4*t[r]+3]+8&&(c=3&y[4*t[r]+2],s=4*t[r],m=y[s],f=4096*(J?1&y[s+1]:Q)+16*(y[s+1]&255-J)+(128&y[s+2]?7-a+m+8*((a<m+8&&J)+J):8+a-m-8*(a<m+8)),s=e-y[4*t[r]+3],m=64&y[4*t[r]+2]?s:7-s,(p=2*(na(f+8)>>m&1)+(na(f)>>m&1))&&(32&y[4*t[r]+2]&&b[(e+E)%512]&&aa||!q||(fa.frameBuffer32[256*a+e]=ca[_[16144+4*c+p]]),0===t[r]&&!G&&b[(e+E)%512]&&q&&aa&&(G=1)))})(l),E=256*(1&T)+8*k+j,fa.vramCtx.fillStyle="pink",fa.vramCtx.rect(E-2,(l+H-2)%480,0==l||239==l?256:4,4),fa.vramCtx.rect((E-2+256)%512,(l+H-2)%480,4,4)):240==l?(z=1,o=1,fa.frameData.data.set(fa.frameBuffer8),fa.frameCtx.putImageData(fa.frameData,0,0),fa.vramData.data.set(fa.vramBuffer8),fa.vramCtx.putImageData(fa.vramData,0,0),aa&&fa.vramCtx.fill()):260==l?W=G=z=0:261==l&&(l=-1,ta=1,H=240*((T=(1&T)+(2&d))>>1)+8*U+v))};fa.parse=(a,r,e,t)=>{if(a[0]+a[1]+a[2]+a[3]==256){for(fa.mirroring=8&a[6]?2:1&a[6]?0:1,fa.mapper=(a[6]>>4)+(240&a[7]),t=16,4&a[6]&&(t+=512),fa.prg=[],r=0;r<a[4];r++)for(fa.prg[r]=[],e=0;e<16384;e++)fa.prg[r][e]=a[t++];for(fa.chr=[[]],r=0;r<a[5];r++)for(fa.chr[r]=[],e=0;e<8192;e++)fa.chr[r][e]=a[t++]}};
+fileInput.onchange = (fileReader) => {
+  fileReader = new FileReader();
+  fileReader.readAsArrayBuffer(fileInput.files[0]);
+  fileReader.onload = () => {
+    NES.init({rom: new Uint8Array(fileReader.result), frame: frameCanvas, vram: vramCanvas, audio});
+    if(i_start.checked) NES.play();
+  }
+}
+</script>
 </textarea>
 </div>
   
@@ -167,51 +225,42 @@ play=function(rom){var imageData,audio,oscillator,i,memory,stack,pc,sp,I,timer,s
 <script>
 page = 0;
 
-play = () => {
-  frame.src="data:text/html,"+escape(top["t"+page].value);
-  frame.focus();
-}
-
 L.onclick = () => {
-  top["p"+page].style.display = "none";
-  if(page > 0){
-    page--;
-  }
-  if(page == 0){
-    book.classList.add("closed");
-    L.innerHTML = "";
-  }
-  else show();
+  show(page-1);
 }
 
 R.onclick = () => {
-  if(page > 0) top["p"+page].style.display = "none";
-  page++;
-  book.classList.remove("closed");
-  L.innerHTML = "🡐";
-  show();
+  show(page+1);
 }
 
-show = () => {
-  top["p"+page].style.display = "block";
-  play();
+show = (p) => {
+  if(p > 23) p = 0;
+  if(p < 0) p = 23;
+  book.className = "closed" + p;
+  if(page > 0) top["p"+page].style.display = "none";
+  page = p;
+  if(page > 0){
+    frame.src="data:text/html,"+escape(top["t"+page].value);
+    frame.focus();
+    top["p"+p].style.display = "block";
+  }
+  page = p;
 }
 </script>
 
 <style>
-* { margin: 0; padding: 0; border: 0; box-sizing: border-box; font-size: 14px; }
-body { background: tan; margin: auto; user-select: none; }
-#book { background: #234; position: fixed; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%); width: 1200px; height: 700px; }
-.page { background: #fff; position: fixed; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%); width: 1150px; height: 650px; }
-.pageleft { width: 50%; height: 100%; border-right: 2px solid #000; float: left; padding: 9px;}
-.pageright { width: 50%; height: 100%; float: right; padding: 9px; }
-h1 { margin: 0 0 10px; }
-textarea { border: 1px solid; width: 100%; height: 590px; font-size: 12px; line-height: 12px; padding: 10px; }
-iframe { width: 100%; height: 100%; }
-#book.closed * { display: none }
-#book.closed { width: 600px }
-#book.closed:after { content: "The Codegolf Games Book"; color: #fff; font-size: 80px; text-align: center; padding: 50px 100px; display: block; }
-#L { position: fixed; left: 20px; top: 45%; color: #fff; font-size: 70px; cursor: pointer; }
-#R { position: fixed; right: 20px; top: 45%; color: #fff; font-size: 70px;  cursor: pointer; }
-button { padding: 5px; border: 1px solid }
-iframe { width: 100%; height: 550px; border: 1px solid #000;
+*{margin:0;padding:0;border:0;box-sizing:border-box;font-size:14px}
+body{background:tan;margin:auto;user-select:none}
+#book{background:#234;position:fixed;top:50%;left:50%;transform:translateX(-50%)translateY(-50%);width:800px;height:700px}
+.page{background:#fff;position:fixed;top:50%;left:50%;transform:translateX(-50%)translateY(-50%);width:750px;height:650px}
+.pageleft{width:50%;height:100%;border-right:2px solid #000;float:left;padding:9px}.pageright{width:50%;height:100%;float:right;padding:9px}
+h1{margin:0 0 10px}
+textarea{border:1px solid;width:100%;height:590px;font-size:12px;line-height:12px;padding:10px}
+iframe{width:100%;height:100%}
+#book.closed0 *{display:none}
+#book.closed0{width:600px}
+#book.closed0:after{content:"The Codegolf Games Book";color:#fff;font-size:80px;text-align:center;padding:50px 100px;display:block}
+#L{position:fixed;left:calc(50% - 500px);top:45%;color:#fff;font-size:70px;cursor:pointer}
+#R{position:fixed;left:calc(50% + 450px);top:45%;color:#fff;font-size:70px;cursor:pointer}
+button{padding:5px;border:1px solid}
+iframe{width:100%;height:550px}
