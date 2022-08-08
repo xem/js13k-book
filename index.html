@@ -103,7 +103,6 @@
 </textarea>
 </div>
 
-
 <div id=p14b style=display:none>
 <h1>Snake Lite</h1>
 <textarea readonly id=t14b>
@@ -117,38 +116,6 @@
 <body onload='setInterval(onkeydown=d=>{for(d=d||5,(e=d.keyCode)&&(d=e%2?e%3?-1:1:5),t="",d=c-d,e=a|b<<d,0>d|a&b<<d&&(a=e=parseInt((a|b<<c).toString(d=32).replace(/v/,""),d),b=new Date%2?1:3),c=d,i=1;31>i;)O.innerHTML=t+=".#"[1&(1<<30|e).toString(2)[i]]+(i++%5?"":"\n")},666,a=0,b=3,c=32)'><pre id=O>
 </textarea>
 </div>
-
-<div id=p14f style=display:none>
-<h1>Micro tetris</h1>
-<textarea readonly id=t14f>
-<body onload="
-v=c=>(h=37461+c%2*36703>>i%4*2+(i&2)*t&3,c&2?3-t/5-h:h);
-C=[S=u=0];
-setInterval(onkeyup=e=>{
-C=[...B=u?B:C.filter(_=>_-2046?x=y=4:!++S,t=r%7)];
-u=[x,y,i=r+4,e];
-
-for(e&&(g=e.which-38)-2?g?x-=g:r++:y++;--i;
-~B[b=~v(r)+26-y]-2049&k&&~b?
-i<T?Z.innerText=z+=`_#
-`[C[b]|=k,i%11?C[i/11|0]>>i%11&1:2]+`| `:z=S
-:[x,y,r,u]=u
-)k=1<<v(r+1)+x
-},r=T=210)"id=Z>
-</textarea>
-</div>
-
-<div id=p14g style=display:none>
-<h1>Lights off</h1>
-<textarea readonly id=t14f>
-<canvas id=c height=80><script>x=c.getContext`2d`;t=0;
-(onclick=e=>{for(c.width=i=136;i--;x.fillText('⚪⚫'[x[i]=((i%5-(e.x>>4))**2+(Y-(e.y>>4))**2<2)^x[i]^i&!t],i%5*16,11+Y*16))Y=i/5|0})({x:1e3});t++
-</script>
-</textarea>
-</div>
-
-
-
 
 <div id=p15 style=display:none>
 <h1>Can I Haz 1Karrot?</h1>
@@ -188,12 +155,8 @@ i<T?Z.innerText=z+=`_#
 <div id=p20 readonly style=display:none>
 <h1>MiniWordle</h1>
 <textarea id=t20>
-<input id=i><pre id=p><script>
-W="Apply".split(/(?=[A-Z])/).map(a=>a.toLowerCase());
-w=W[new Date%W.length],g=6,onkeyup=e=>{e.which==13&&(v=i.value.toLowerCase(),a=[...w],p.innerHTML+=`
-`+[...v].map((e,n)=>e==a[n]?a[n]=0:e).map(e=>e?a[x=a.indexOf(e)
-]=~x?unescape("🟨"):unescape("⬛"):unescape("🟩")).join``+" "+v,i.value=v!=w&&--g?"":w)}
-</script>
+<input id=i><pre id=p><script>W='AvoidAdaptAsideAloneBrownBibleBrandCheekCatchCivilCrimeCountDepthDoubtExtraEarlyFiftyFewerFieldFalseGuideGreenHumanIndexJointLayerLabelMatchMarryMotorNeverOftenPatchPeacePoundPilotQuoteRiverRouteShelfShadeSwingSpeedShootSplitSmellSugarSolarStoreTruckThirdThereTraceTrainUnionVitalWholeWoundYoung'.map(a=>a.toLowerCase());w=W[new Date%W.length],g=6,onkeyup=e=>{e.which==13&&(v=i.value.toLowerCase(),a=[...w],p.innerHTML+=`
+`+[...v].map((e,n)=>e==a[n]?a[n]=0:e).map(e=>e?a[x=a.indexOf(e)]=~x?unescape("🟨"):unescape("⬛"):unescape("🟩")).join``+" "+v,i.value=v!=w&&--g?"":w)}</script>
 </textarea>
 </div>
 
@@ -225,25 +188,8 @@ w=W[new Date%W.length],g=6,onkeyup=e=>{e.which==13&&(v=i.value.toLowerCase(),a=[
 <br>
 <center>
 <button onclick=show(page)>Reload</button></div>
-
 <script>
 page=0,L.onclick=_=>show(page-1),R.onclick=_=>show(page+1),show=e=>{e>23&&(e=0),e<0&&(e=23),book.className="closed"+e,page>0&&(top["p"+page].style.display="none"),page=e,page>0&&(frame.src="data:text/html,"+escape(top["t"+page].value),frame.focus(),top["p"+e].style.display="block"),page=e}
 </script>
-
 <style>
-*{margin:0;padding:0;border:0;box-sizing:border-box;font-size:14px}
-body{background:tan;margin:auto;user-select:none}
-#book{background:#234;position:fixed;top:50%;left:50%;transform:translateX(-50%)translateY(-50%);width:800px;height:700px;box-shadow:3em 3em 3em #0008;}
-.page{background:#fff;position:fixed;top:50%;left:50%;transform:translateX(-50%)translateY(-50%);width:750px;height:650px}
-.pageleft{width:50%;height:100%;border-right:2px solid #000;float:left;padding:9px}.pageright{width:50%;height:100%;float:right;padding:9px}
-h1{margin:0 0 10px}
-textarea{border:1px solid;width:100%;height:590px;font-size:12px;line-height:12px;padding:10px;background:#222;color:#fff;word-wrap:break-all}
-iframe{width:100%;height:100%}
-#book.closed0 *{display:none}
-#book.closed0{width:600px}
-#book.closed0:before{content:"10 Years of Game Golfing";color:#fff;font-size:70px;text-align:center;padding:100px 50px;display:block}
-#book.closed0:after{content:"The Codegolf Team";color:#fff;font-size:40px;text-align:center;padding:250px 100px;display:block}
-#L{position:fixed;left:calc(50% - 480px);top:45%;color:#fff;font-size:70px;cursor:pointer;}
-#R{position:fixed;left:calc(50% + 420px);top:45%;color:#fff;font-size:70px;cursor:pointer;}
-button{padding:5px;border:1px solid}
-iframe{width:100%;height:550px}
+*{margin:0;padding:0;border:0;box-sizing:border-box;font-size:14px}body{background:tan;margin:auto;user-select:none}#book{background:#234;position:fixed;top:50%;left:50%;transform:translateX(-50%)translateY(-50%);width:800px;height:700px;box-shadow:3em 3em 3em #0008}.page{background:#fff;position:fixed;top:50%;left:50%;transform:translateX(-50%)translateY(-50%);width:750px;height:650px}.pageleft{width:50%;height:100%;border-right:2px solid #000;float:left;padding:9px}.pageright{width:50%;height:100%;float:right;padding:9px}h1{margin:0 0 10px}textarea{border:1px solid;width:100%;height:590px;font-size:12px;line-height:12px;padding:10px;background:#222;color:#fff;word-wrap:break-all}iframe{width:100%;height:100%}#book.closed0 *{display:none}#book.closed0{width:600px}#book.closed0:before{content:"10 Years of Game Golfing";color:#fff;font-size:70px;text-align:center;padding:100px 50px;display:block}#book.closed0:after{content:"The Codegolf Team";color:#fff;font-size:40px;text-align:center;padding:250px 100px;display:block}#L{position:fixed;left:calc(50% - 480px);top:45%;color:#fff;font-size:70px;cursor:pointer}#R{position:fixed;left:calc(50% + 420px);top:45%;color:#fff;font-size:70px;cursor:pointer}button{padding:5px;border:1px solid}iframe{width:100%;height:550px}
