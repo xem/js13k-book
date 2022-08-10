@@ -22,6 +22,8 @@ MiniTicTacToe // https://ethproductions.github.io/golf/tic-tac-toe/
 SMB1-1k // https://github.com/xem/js1k19/tree/gh-pages/SMB1-1k
 SHIFT 2K20 // https://github.com/xem/2kplus20/
 MiniWordle // https://github.com/xem/miniWordle/
+Lights out // https://www.dwitter.net/d/22102
+Dino // https://www.dwitter.net/d/20814
 MiniGameOfLife // https://github.com/xem/miniGameOfLife
 Bonus: Chip8 emulator // https://github.com/xem/chip8
 Bonus: NES emulator (WIP) // https://github.com/xem/jsnes-lite
